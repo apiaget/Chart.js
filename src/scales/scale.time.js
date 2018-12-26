@@ -723,7 +723,7 @@ module.exports = function() {
 			var me = this;
 			var time = null;
 
-			if (index !== undefined && datasetIndex !== undefined) {
+			if (index !== undefined && datasetIndex !== undefined && me._timestamps.datasets[datasetIndex] !== undefined) {
 				time = me._timestamps.datasets[datasetIndex][index];
 			}
 
